@@ -1,90 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.11.9 on win32)" generated="2024-06-22T16:32:34.212078" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.11.9 on win32)" generated="2024-06-22T21:09:01.299454" rpa="false" schemaversion="5">
 <suite id="s1" name="Test1" source="D:\Programming\SVVT\tests\test1.robot">
-<test id="s1-t1" name="Live Radio Streaming Accessible from Homepage" line="9">
+<test id="s1-t1" name="Live Radio Streaming Accessible from Homepage" line="8">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-22T16:32:34.498497" level="INFO">Opening browser 'chrome' to base url 'https://www.shegerfm.com'.</msg>
+<msg time="2024-06-22T21:09:03.248312" level="INFO">Opening browser 'chrome' to base url 'https://www.shegerfm.com'.</msg>
 <arg>${URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-22T16:32:34.498497" elapsed="38.765482"/>
+<status status="PASS" start="2024-06-22T21:09:03.248312" elapsed="49.117982"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-06-22T16:33:13.263979" elapsed="0.041948"/>
+<status status="PASS" start="2024-06-22T21:09:52.377984" elapsed="12.743335"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
-<msg time="2024-06-22T16:33:18.573979" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-06-22T16:33:18.573979" level="FAIL">Element 'xpath=//a[text()='MusicPlayer2802357603__lowerLayout focus-within']' not visible after 5 seconds.</msg>
-<arg>xpath=//a[text()='MusicPlayer2802357603__lowerLayout focus-within']</arg>
+<msg time="2024-06-22T21:10:36.428992" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-22T21:10:36.430216" level="FAIL">Element 'xpath=//*[@id="comp-l107t2ei"]/div/div[2]/div[2]/div[1]/button/svg' not visible after 5 seconds.</msg>
+<arg>xpath=//*[@id="comp-l107t2ei"]/div/div[2]/div[2]/div[1]/button/svg</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="FAIL" start="2024-06-22T16:33:13.305927" elapsed="5.283674">Element 'xpath=//a[text()='MusicPlayer2802357603__lowerLayout focus-within']' not visible after 5 seconds.</status>
+<status status="FAIL" start="2024-06-22T21:10:05.122870" elapsed="32.284968">Element 'xpath=//*[@id="comp-l107t2ei"]/div/div[2]/div[2]/div[1]/button/svg' not visible after 5 seconds.</status>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<arg>xpath=//a[text()='PlayPause170508545__button MusicPlayer2802357603__playButton focus-within']</arg>
+<arg>xpath=//*[@id="comp-l107t2ei"]/div/div[2]/div[2]/div[1]/button/svg</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-06-22T16:33:18.589601" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-06-22T21:10:37.418100" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>Listen Live</arg>
+<arg>Live Stream</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="NOT RUN" start="2024-06-22T16:33:18.589601" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-06-22T21:10:37.418100" elapsed="0.000000"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-06-22T16:33:18.589601" elapsed="3.984991"/>
+<status status="PASS" start="2024-06-22T21:10:37.427547" elapsed="8.192103"/>
 </kw>
 <doc>Verify that live radio streaming is accessible from the homepage</doc>
-<status status="FAIL" start="2024-06-22T16:32:34.498497" elapsed="48.076095">Element 'xpath=//a[text()='MusicPlayer2802357603__lowerLayout focus-within']' not visible after 5 seconds.</status>
+<status status="FAIL" start="2024-06-22T21:09:03.242883" elapsed="102.379701">Element 'xpath=//*[@id="comp-l107t2ei"]/div/div[2]/div[2]/div[1]/button/svg' not visible after 5 seconds.</status>
 </test>
-<test id="s1-t2" name="Play and Pause Live Stream" line="18">
+<test id="s1-t2" name="Play and Pause Live Stream" line="17">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-22T16:33:22.574592" level="INFO">Opening browser 'chrome' to base url 'https://www.shegerfm.com'.</msg>
+<msg time="2024-06-22T21:10:45.643859" level="INFO">Opening browser 'chrome' to base url 'https://www.shegerfm.com'.</msg>
 <arg>${URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-22T16:33:22.574592" elapsed="10.974015"/>
+<status status="PASS" start="2024-06-22T21:10:45.643859" elapsed="49.860134"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-06-22T16:33:33.549587" elapsed="0.093326"/>
+<status status="PASS" start="2024-06-22T21:11:35.510816" elapsed="0.114488"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-06-22T21:11:52.250166" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-22T21:11:52.251173" level="FAIL">Element 'xpath=//*[@id="comp-l107t2ei"]/div/div[2]/div[2]/div[1]/button/svg' not visible after 5 seconds.</msg>
+<arg>xpath=//*[@id="comp-l107t2ei"]/div/div[2]/div[2]/div[1]/button/svg</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-06-22T21:11:35.627165" elapsed="16.627494">Element 'xpath=//*[@id="comp-l107t2ei"]/div/div[2]/div[2]/div[1]/button/svg' not visible after 5 seconds.</status>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-22T16:33:33.644896" level="INFO">Clicking element 'xpath=//a[text()='PlayPause170508545__button MusicPlayer2802357603__playButton focus-within']'.</msg>
-<msg time="2024-06-22T16:33:33.906127" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-06-22T16:33:33.906127" level="FAIL">Element with locator 'xpath=//a[text()='PlayPause170508545__button MusicPlayer2802357603__playButton focus-within']' not found.</msg>
-<arg>xpath=//a[text()='PlayPause170508545__button MusicPlayer2802357603__playButton focus-within']</arg>
+<arg>xpath=//*[@id="comp-l107t2ei"]/div/div[2]/div[2]/div[1]/button/svg</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-06-22T16:33:33.644896" elapsed="0.263225">Element with locator 'xpath=//a[text()='PlayPause170508545__button MusicPlayer2802357603__playButton focus-within']' not found.</status>
+<status status="NOT RUN" start="2024-06-22T21:11:52.255659" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>Listen Live</arg>
+<arg>Live Stream</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="NOT RUN" start="2024-06-22T16:33:33.909118" elapsed="0.000000"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>xpath=//button[@id='PlayPause170508545__button MusicPlayer2802357603__playButton focus-within']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-06-22T16:33:33.910121" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-06-22T21:11:52.255659" elapsed="0.000000"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
 <arg>5 seconds</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2024-06-22T16:33:33.910121" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-06-22T21:11:52.255659" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<arg>xpath=//button[@id='PlayPause170508545__button MusicPlayer2802357603__playButton focus-within']</arg>
+<arg>xpath=//*[@id="comp-l107t2ei"]/div/div[2]/div[2]/div[1]/button/svg</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-06-22T16:33:33.911113" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-06-22T21:11:52.255659" elapsed="0.000000"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-06-22T16:33:33.911113" elapsed="2.526195"/>
+<status status="PASS" start="2024-06-22T21:11:52.255659" elapsed="8.786146"/>
 </kw>
 <doc>Verify that the play and pause controls for live streaming work correctly</doc>
-<status status="FAIL" start="2024-06-22T16:33:22.574592" elapsed="13.862716">Element with locator 'xpath=//a[text()='PlayPause170508545__button MusicPlayer2802357603__playButton focus-within']' not found.</status>
+<status status="FAIL" start="2024-06-22T21:10:45.637063" elapsed="75.408864">Element 'xpath=//*[@id="comp-l107t2ei"]/div/div[2]/div[2]/div[1]/button/svg' not visible after 5 seconds.</status>
 </test>
-<status status="FAIL" start="2024-06-22T16:32:34.212078" elapsed="62.225230"/>
+<status status="FAIL" start="2024-06-22T21:09:01.304144" elapsed="179.770570"/>
 </suite>
 <statistics>
 <total>
