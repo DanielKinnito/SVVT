@@ -1,295 +1,354 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.11.9 on win32)" generated="2024-06-22T15:56:14.619548" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.11.9 on win32)" generated="2024-06-22T16:17:54.522616" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="D:\Programming\SVVT\tests">
 <suite id="s1-s1" name="Test Shegerfm" source="D:\Programming\SVVT\tests\test_shegerfm.robot">
 <test id="s1-s1-t1" name="Live Radio Streaming Accessible from Homepage" line="8">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-22T15:56:20.798167" level="INFO">Opening browser 'chrome' to base url 'https://www.shegerfm.com'.</msg>
+<msg time="2024-06-22T16:17:54.870280" level="INFO">Opening browser 'chrome' to base url 'https://www.shegerfm.com'.</msg>
 <arg>${URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-22T15:56:20.798167" elapsed="23.269796"/>
+<status status="PASS" start="2024-06-22T16:17:54.854658" elapsed="5.675462"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-22T16:18:00.533111" elapsed="4.288656"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-06-22T16:18:10.129640" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-22T16:18:10.129640" level="FAIL">Element 'xpath=//a[text()='Live Radio']' not visible after 5 seconds.</msg>
+<arg>xpath=//a[text()='Live Radio']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-06-22T16:18:04.821767" elapsed="5.407026">Element 'xpath=//a[text()='Live Radio']' not visible after 5 seconds.</status>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-22T15:56:44.083405" level="INFO">Clicking element 'xpath=//a[@id='live-stream']'.</msg>
-<msg time="2024-06-22T15:56:45.491206" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-06-22T15:56:45.491206" level="FAIL">Element with locator 'xpath=//a[@id='live-stream']' not found.</msg>
-<arg>xpath=//a[@id='live-stream']</arg>
+<arg>xpath=//a[text()='Live Radio']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-06-22T15:56:44.082341" elapsed="1.637102">Element with locator 'xpath=//a[@id='live-stream']' not found.</status>
+<status status="NOT RUN" start="2024-06-22T16:18:10.228793" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>Live Stream</arg>
+<arg>Listen Live</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="NOT RUN" start="2024-06-22T15:56:45.721439" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-06-22T16:18:10.228793" elapsed="0.000000"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-06-22T15:56:45.722436" elapsed="4.021548"/>
+<status status="PASS" start="2024-06-22T16:18:10.228793" elapsed="2.922908"/>
 </kw>
-<status status="FAIL" start="2024-06-22T15:56:20.798167" elapsed="28.945817">Element with locator 'xpath=//a[@id='live-stream']' not found.</status>
+<doc>Verify that live radio streaming is accessible from the homepage</doc>
+<status status="FAIL" start="2024-06-22T16:17:54.854658" elapsed="18.297043">Element 'xpath=//a[text()='Live Radio']' not visible after 5 seconds.</status>
 </test>
-<test id="s1-s1-t2" name="Play and Pause Live Stream" line="14">
+<test id="s1-s1-t2" name="Play and Pause Live Stream" line="17">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-22T15:56:49.761379" level="INFO">Opening browser 'chrome' to base url 'https://www.shegerfm.com'.</msg>
+<msg time="2024-06-22T16:18:13.163430" level="INFO">Opening browser 'chrome' to base url 'https://www.shegerfm.com'.</msg>
 <arg>${URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-22T15:56:49.760383" elapsed="58.473950"/>
+<status status="PASS" start="2024-06-22T16:18:13.162440" elapsed="8.956691"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-22T16:18:22.119131" elapsed="0.096939"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-22T15:57:48.236329" level="INFO">Clicking element 'xpath=//a[@id='live-stream']'.</msg>
-<msg time="2024-06-22T15:57:48.443435" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-06-22T15:57:48.443435" level="FAIL">Element with locator 'xpath=//a[@id='live-stream']' not found.</msg>
-<arg>xpath=//a[@id='live-stream']</arg>
+<msg time="2024-06-22T16:18:22.217602" level="INFO">Clicking element 'xpath=//a[text()='Live Radio']'.</msg>
+<msg time="2024-06-22T16:18:22.479626" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-22T16:18:22.479626" level="FAIL">Element with locator 'xpath=//a[text()='Live Radio']' not found.</msg>
+<arg>xpath=//a[text()='Live Radio']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-06-22T15:57:48.235330" elapsed="0.210100">Element with locator 'xpath=//a[@id='live-stream']' not found.</status>
+<status status="FAIL" start="2024-06-22T16:18:22.217602" elapsed="0.265016">Element with locator 'xpath=//a[text()='Live Radio']' not found.</status>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Listen Live</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2024-06-22T16:18:22.482618" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<arg>xpath=//button[@id='play']</arg>
+<arg>xpath=//button[@id='play-button']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-06-22T15:57:48.445430" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-06-22T16:18:22.483939" elapsed="0.000000"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
 <arg>5 seconds</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2024-06-22T15:57:48.446426" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-06-22T16:18:22.483939" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<arg>xpath=//button[@id='pause']</arg>
+<arg>xpath=//button[@id='pause-button']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-06-22T15:57:48.446426" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-06-22T16:18:22.483939" elapsed="0.000000"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-06-22T15:57:48.447423" elapsed="2.834291"/>
+<status status="PASS" start="2024-06-22T16:18:22.483939" elapsed="3.550108"/>
 </kw>
-<status status="FAIL" start="2024-06-22T15:56:49.743984" elapsed="61.537730">Element with locator 'xpath=//a[@id='live-stream']' not found.</status>
+<doc>Verify that the play and pause controls for live streaming work correctly</doc>
+<status status="FAIL" start="2024-06-22T16:18:13.151701" elapsed="12.882346">Element with locator 'xpath=//a[text()='Live Radio']' not found.</status>
 </test>
-<test id="s1-s1-t3" name="On-Demand Audio Playback Accessible" line="22">
+<test id="s1-s1-t3" name="On-Demand Audio Playback Accessible" line="28">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-22T15:57:51.292889" level="INFO">Opening browser 'chrome' to base url 'https://www.shegerfm.com'.</msg>
+<msg time="2024-06-22T16:18:26.034047" level="INFO">Opening browser 'chrome' to base url 'https://www.shegerfm.com'.</msg>
 <arg>${URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-22T15:57:51.291884" elapsed="14.893839"/>
+<status status="PASS" start="2024-06-22T16:18:26.034047" elapsed="35.962895"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-22T16:19:02.012111" elapsed="0.037917"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-22T15:58:06.190377" level="INFO">Clicking element 'xpath=//a[@id='on-demand']'.</msg>
-<msg time="2024-06-22T15:58:06.440338" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-06-22T15:58:06.440338" level="FAIL">Element with locator 'xpath=//a[@id='on-demand']' not found.</msg>
-<arg>xpath=//a[@id='on-demand']</arg>
+<msg time="2024-06-22T16:19:02.052024" level="INFO">Clicking element 'xpath=//a[text()='On-Demand']'.</msg>
+<msg time="2024-06-22T16:19:08.730355" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-22T16:19:08.730355" level="FAIL">Element with locator 'xpath=//a[text()='On-Demand']' not found.</msg>
+<arg>xpath=//a[text()='On-Demand']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-06-22T15:58:06.189382" elapsed="0.252952">Element with locator 'xpath=//a[@id='on-demand']' not found.</status>
+<status status="FAIL" start="2024-06-22T16:19:02.051026" elapsed="6.680323">Element with locator 'xpath=//a[text()='On-Demand']' not found.</status>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>On-Demand Shows</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2024-06-22T16:19:08.732346" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>xpath=//div[@class='show'][1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-06-22T15:58:06.443342" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-06-22T16:19:08.733327" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Play</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="NOT RUN" start="2024-06-22T15:58:06.443342" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-06-22T16:19:08.733953" elapsed="0.000000"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-06-22T15:58:06.444328" elapsed="9.346349"/>
+<status status="PASS" start="2024-06-22T16:19:08.734579" elapsed="2.785339"/>
 </kw>
-<status status="FAIL" start="2024-06-22T15:57:51.281714" elapsed="24.508963">Element with locator 'xpath=//a[@id='on-demand']' not found.</status>
+<doc>Verify that users can access on-demand audio playback from the on-demand section</doc>
+<status status="FAIL" start="2024-06-22T16:18:26.034047" elapsed="45.485871">Element with locator 'xpath=//a[text()='On-Demand']' not found.</status>
 </test>
-<test id="s1-s1-t4" name="Play and Pause On-Demand Audio" line="29">
+<test id="s1-s1-t4" name="Play and Pause On-Demand Audio" line="38">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-22T15:58:15.790677" level="INFO">Opening browser 'chrome' to base url 'https://www.shegerfm.com'.</msg>
+<msg time="2024-06-22T16:19:11.532492" level="INFO">Opening browser 'chrome' to base url 'https://www.shegerfm.com'.</msg>
 <arg>${URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-22T15:58:15.790677" elapsed="34.741064"/>
+<status status="PASS" start="2024-06-22T16:19:11.531485" elapsed="11.145795"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-22T16:19:22.678277" elapsed="0.074278"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-22T15:58:50.531741" level="INFO">Clicking element 'xpath=//a[@id='on-demand']'.</msg>
-<msg time="2024-06-22T15:58:50.727195" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-06-22T15:58:50.727195" level="FAIL">Element with locator 'xpath=//a[@id='on-demand']' not found.</msg>
-<arg>xpath=//a[@id='on-demand']</arg>
+<msg time="2024-06-22T16:19:22.760530" level="INFO">Clicking element 'xpath=//a[text()='On-Demand']'.</msg>
+<msg time="2024-06-22T16:19:23.000344" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-17.png"&gt;&lt;img src="selenium-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-22T16:19:23.000344" level="FAIL">Element with locator 'xpath=//a[text()='On-Demand']' not found.</msg>
+<arg>xpath=//a[text()='On-Demand']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-06-22T15:58:50.531741" elapsed="0.195454">Element with locator 'xpath=//a[@id='on-demand']' not found.</status>
+<status status="FAIL" start="2024-06-22T16:19:22.759528" elapsed="0.241811">Element with locator 'xpath=//a[text()='On-Demand']' not found.</status>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
 <arg>xpath=//div[@class='show'][1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-06-22T15:58:50.727195" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-06-22T16:19:23.002346" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Play</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2024-06-22T16:19:23.002346" elapsed="0.000987"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<arg>xpath=//button[@id='play']</arg>
+<arg>xpath=//button[@id='play-button']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-06-22T15:58:50.727195" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-06-22T16:19:23.143631" elapsed="0.000000"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
 <arg>5 seconds</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2024-06-22T15:58:50.727195" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-06-22T16:19:23.143631" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<arg>xpath=//button[@id='pause']</arg>
+<arg>xpath=//button[@id='pause-button']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-06-22T15:58:50.768193" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-06-22T16:19:23.143631" elapsed="0.000000"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-06-22T15:58:50.768193" elapsed="2.825024"/>
+<status status="PASS" start="2024-06-22T16:19:23.143631" elapsed="3.414552"/>
 </kw>
-<status status="FAIL" start="2024-06-22T15:58:15.790677" elapsed="37.802540">Element with locator 'xpath=//a[@id='on-demand']' not found.</status>
+<doc>Verify that the play and pause controls work for on-demand audio</doc>
+<status status="FAIL" start="2024-06-22T16:19:11.519918" elapsed="15.038265">Element with locator 'xpath=//a[text()='On-Demand']' not found.</status>
 </test>
-<test id="s1-s1-t5" name="View Program Schedules" line="38">
+<test id="s1-s1-t5" name="View Program Schedules" line="50">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-22T15:58:53.593217" level="INFO">Opening browser 'chrome' to base url 'https://www.shegerfm.com'.</msg>
+<msg time="2024-06-22T16:19:26.571850" level="INFO">Opening browser 'chrome' to base url 'https://www.shegerfm.com'.</msg>
 <arg>${URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-22T15:58:53.593217" elapsed="12.130095"/>
+<status status="PASS" start="2024-06-22T16:19:26.570846" elapsed="38.706776"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-22T16:20:05.291481" elapsed="0.033847"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-22T15:59:05.723539" level="INFO">Clicking element 'xpath=//a[@id='schedules']'.</msg>
-<msg time="2024-06-22T15:59:05.945230" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-06-22T15:59:05.945230" level="FAIL">Element with locator 'xpath=//a[@id='schedules']' not found.</msg>
-<arg>xpath=//a[@id='schedules']</arg>
+<msg time="2024-06-22T16:20:05.330387" level="INFO">Clicking element 'xpath=//a[text()='Schedules']'.</msg>
+<msg time="2024-06-22T16:20:13.220934" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-18.png"&gt;&lt;img src="selenium-screenshot-18.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-22T16:20:13.220934" level="FAIL">Element with locator 'xpath=//a[text()='Schedules']' not found.</msg>
+<arg>xpath=//a[text()='Schedules']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-06-22T15:59:05.723539" elapsed="0.221691">Element with locator 'xpath=//a[@id='schedules']' not found.</status>
+<status status="FAIL" start="2024-06-22T16:20:05.330387" elapsed="7.892541">Element with locator 'xpath=//a[text()='Schedules']' not found.</status>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Program Schedule</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="NOT RUN" start="2024-06-22T15:59:05.945230" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-06-22T16:20:13.223924" elapsed="0.000000"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-06-22T15:59:05.960865" elapsed="2.468427"/>
+<status status="PASS" start="2024-06-22T16:20:13.224921" elapsed="3.644950"/>
 </kw>
-<status status="FAIL" start="2024-06-22T15:58:53.593217" elapsed="14.836075">Element with locator 'xpath=//a[@id='schedules']' not found.</status>
+<doc>Verify that the daily and weekly program schedules are displayed correctly</doc>
+<status status="FAIL" start="2024-06-22T16:19:26.558183" elapsed="50.311688">Element with locator 'xpath=//a[text()='Schedules']' not found.</status>
 </test>
-<test id="s1-s1-t6" name="View Artist Profiles" line="44">
+<test id="s1-s1-t6" name="View Artist Profiles" line="58">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-22T15:59:08.429292" level="INFO">Opening browser 'chrome' to base url 'https://www.shegerfm.com'.</msg>
+<msg time="2024-06-22T16:20:16.869871" level="INFO">Opening browser 'chrome' to base url 'https://www.shegerfm.com'.</msg>
 <arg>${URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-22T15:59:08.429292" elapsed="8.061382"/>
+<status status="PASS" start="2024-06-22T16:20:16.869871" elapsed="10.686119"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-22T16:20:27.556986" elapsed="0.093533"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-22T15:59:16.490674" level="INFO">Clicking element 'xpath=//a[@id='artists']'.</msg>
-<msg time="2024-06-22T15:59:16.707431" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-06-22T15:59:16.707431" level="FAIL">Element with locator 'xpath=//a[@id='artists']' not found.</msg>
-<arg>xpath=//a[@id='artists']</arg>
+<msg time="2024-06-22T16:20:27.663482" level="INFO">Clicking element 'xpath=//a[text()='Artists']'.</msg>
+<msg time="2024-06-22T16:20:27.968936" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-19.png"&gt;&lt;img src="selenium-screenshot-19.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-22T16:20:27.968936" level="FAIL">Element with locator 'xpath=//a[text()='Artists']' not found.</msg>
+<arg>xpath=//a[text()='Artists']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-06-22T15:59:16.490674" elapsed="0.216757">Element with locator 'xpath=//a[@id='artists']' not found.</status>
+<status status="FAIL" start="2024-06-22T16:20:27.662485" elapsed="0.307448">Element with locator 'xpath=//a[text()='Artists']' not found.</status>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<arg>xpath=//div[@class='artist'][1]</arg>
+<arg>xpath=//div[@class='artist-profile'][1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-06-22T15:59:16.707431" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-06-22T16:20:27.970931" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Biography</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="NOT RUN" start="2024-06-22T15:59:16.707431" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-06-22T16:20:27.971928" elapsed="0.000000"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-06-22T15:59:16.707431" elapsed="2.494594"/>
+<status status="PASS" start="2024-06-22T16:20:27.971928" elapsed="2.624351"/>
 </kw>
-<status status="FAIL" start="2024-06-22T15:59:08.429292" elapsed="10.772733">Element with locator 'xpath=//a[@id='artists']' not found.</status>
+<doc>Verify that artist profiles are accessible and display the correct information</doc>
+<status status="FAIL" start="2024-06-22T16:20:16.869871" elapsed="13.726408">Element with locator 'xpath=//a[text()='Artists']' not found.</status>
 </test>
-<test id="s1-s1-t7" name="Submit Song Request" line="51">
+<test id="s1-s1-t7" name="Submit Song Request" line="67">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-22T15:59:19.212373" level="INFO">Opening browser 'chrome' to base url 'https://www.shegerfm.com'.</msg>
+<msg time="2024-06-22T16:20:30.596279" level="INFO">Opening browser 'chrome' to base url 'https://www.shegerfm.com'.</msg>
 <arg>${URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-22T15:59:19.211367" elapsed="8.718551"/>
+<status status="PASS" start="2024-06-22T16:20:30.596279" elapsed="7.870145"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-22T16:20:38.467421" elapsed="0.121402"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-22T15:59:27.940858" level="INFO">Clicking element 'xpath=//a[@id='song-request']'.</msg>
-<msg time="2024-06-22T15:59:28.141122" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-06-22T15:59:28.141122" level="FAIL">Element with locator 'xpath=//a[@id='song-request']' not found.</msg>
-<arg>xpath=//a[@id='song-request']</arg>
+<msg time="2024-06-22T16:20:38.597075" level="INFO">Clicking element 'xpath=//a[text()='Song Request']'.</msg>
+<msg time="2024-06-22T16:20:38.935238" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-20.png"&gt;&lt;img src="selenium-screenshot-20.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-22T16:20:38.935238" level="FAIL">Element with locator 'xpath=//a[text()='Song Request']' not found.</msg>
+<arg>xpath=//a[text()='Song Request']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-06-22T15:59:27.940484" elapsed="0.200638">Element with locator 'xpath=//a[@id='song-request']' not found.</status>
+<status status="FAIL" start="2024-06-22T16:20:38.594077" elapsed="0.342145">Element with locator 'xpath=//a[text()='Song Request']' not found.</status>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
 <arg>xpath=//input[@name='song']</arg>
 <arg>My Favorite Song</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-06-22T15:59:28.141122" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-06-22T16:20:38.937220" elapsed="0.000000"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
 <arg>xpath=//input[@name='name']</arg>
 <arg>Test User</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-06-22T15:59:28.141122" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-06-22T16:20:38.937220" elapsed="0.000000"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<arg>xpath=//button[@id='submit']</arg>
+<arg>xpath=//button[@type='submit']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-06-22T15:59:28.141122" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-06-22T16:20:38.938232" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Thank you for your request</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="NOT RUN" start="2024-06-22T15:59:28.141122" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-06-22T16:20:38.938232" elapsed="0.000000"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-06-22T15:59:28.141122" elapsed="2.590949"/>
+<status status="PASS" start="2024-06-22T16:20:38.939848" elapsed="2.499950"/>
 </kw>
-<status status="FAIL" start="2024-06-22T15:59:19.202025" elapsed="11.530046">Element with locator 'xpath=//a[@id='song-request']' not found.</status>
+<doc>Verify that the song request form is functional</doc>
+<status status="FAIL" start="2024-06-22T16:20:30.596279" elapsed="10.843519">Element with locator 'xpath=//a[text()='Song Request']' not found.</status>
 </test>
-<test id="s1-s1-t8" name="Submit Feedback" line="60">
+<test id="s1-s1-t8" name="Submit Feedback" line="78">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-06-22T15:59:30.744739" level="INFO">Opening browser 'chrome' to base url 'https://www.shegerfm.com'.</msg>
+<msg time="2024-06-22T16:20:41.451642" level="INFO">Opening browser 'chrome' to base url 'https://www.shegerfm.com'.</msg>
 <arg>${URL}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-06-22T15:59:30.743124" elapsed="9.796248"/>
+<status status="PASS" start="2024-06-22T16:20:41.450656" elapsed="34.173809"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-22T16:21:15.632768" elapsed="0.091628"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-06-22T15:59:40.541366" level="INFO">Clicking element 'xpath=//a[@id='feedback']'.</msg>
-<msg time="2024-06-22T15:59:40.734749" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-06-22T15:59:40.734749" level="FAIL">Element with locator 'xpath=//a[@id='feedback']' not found.</msg>
-<arg>xpath=//a[@id='feedback']</arg>
+<msg time="2024-06-22T16:21:15.724396" level="INFO">Clicking element 'xpath=//a[text()='Feedback']'.</msg>
+<msg time="2024-06-22T16:21:16.355840" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-21.png"&gt;&lt;img src="selenium-screenshot-21.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-22T16:21:16.355840" level="FAIL">Element with locator 'xpath=//a[text()='Feedback']' not found.</msg>
+<arg>xpath=//a[text()='Feedback']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="FAIL" start="2024-06-22T15:59:40.540369" elapsed="0.194380">Element with locator 'xpath=//a[@id='feedback']' not found.</status>
+<status status="FAIL" start="2024-06-22T16:21:15.724396" elapsed="0.631444">Element with locator 'xpath=//a[text()='Feedback']' not found.</status>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
 <arg>xpath=//textarea[@name='feedback']</arg>
 <arg>Great station!</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-06-22T15:59:40.734749" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-06-22T16:21:16.355840" elapsed="0.000000"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
 <arg>xpath=//input[@name='name']</arg>
 <arg>Test User</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-06-22T15:59:40.734749" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-06-22T16:21:16.355840" elapsed="0.000000"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<arg>xpath=//button[@id='submit']</arg>
+<arg>xpath=//button[@type='submit']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-06-22T15:59:40.734749" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-06-22T16:21:16.355840" elapsed="0.000000"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Thank you for your feedback</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="NOT RUN" start="2024-06-22T15:59:40.734749" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-06-22T16:21:16.355840" elapsed="0.000000"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-06-22T15:59:40.734749" elapsed="2.481812"/>
+<status status="PASS" start="2024-06-22T16:21:16.355840" elapsed="2.667078"/>
 </kw>
-<status status="FAIL" start="2024-06-22T15:59:30.732071" elapsed="12.484490">Element with locator 'xpath=//a[@id='feedback']' not found.</status>
+<doc>Verify that the feedback form is functional and submissions are processed correctly</doc>
+<status status="FAIL" start="2024-06-22T16:20:41.439798" elapsed="37.583120">Element with locator 'xpath=//a[text()='Feedback']' not found.</status>
 </test>
-<status status="FAIL" start="2024-06-22T15:56:15.388009" elapsed="207.839726"/>
+<status status="FAIL" start="2024-06-22T16:17:54.569485" elapsed="204.453433"/>
 </suite>
-<status status="FAIL" start="2024-06-22T15:56:14.636502" elapsed="208.600508"/>
+<status status="FAIL" start="2024-06-22T16:17:54.522616" elapsed="204.514573"/>
 </suite>
 <statistics>
 <total>
