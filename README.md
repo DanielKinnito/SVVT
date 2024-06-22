@@ -86,7 +86,7 @@ start results\report.html
 ## Test Cases
 Here are some of the key test cases implemented for the Sheger FM website:
 
-`. **Live Radio Streaming**:
+1. **Live Radio Streaming**:
 
 Verify that live radio streaming is accessible from the homepage.
 Verify that the play, pause, and stop controls for live streaming work correctly.
