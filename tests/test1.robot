@@ -9,18 +9,18 @@ Live Radio Streaming Accessible from Homepage
     [Documentation]    Verify that live radio streaming is accessible from the homepage
     Open Browser    ${URL}    chrome
     Maximize Browser Window
-    Wait Until Element Is Visible    xpath=//a[text()='MusicPlayer2802357603__lowerLayout focus-within']
-    Click Element    xpath=//a[text()='PlayPause170508545__button MusicPlayer2802357603__playButton focus-within']
-    Wait Until Page Contains    Listen Live
+    Wait Until Element Is Visible    xpath=//div[@class='jp-play']   # Corrected XPath for play button
+    Click Element    xpath=//div[@class='jp-play']
+    Wait Until Page Contains    Live Stream
     [Teardown]    Close Browser
 
 Play and Pause Live Stream
     [Documentation]    Verify that the play and pause controls for live streaming work correctly
     Open Browser    ${URL}    chrome
     Maximize Browser Window
-    Click Element    xpath=//a[text()='PlayPause170508545__button MusicPlayer2802357603__playButton focus-within']
-    Wait Until Page Contains    Listen Live
-    Click Element    xpath=//button[@id='PlayPause170508545__button MusicPlayer2802357603__playButton focus-within']
+    Wait Until Element Is Visible    xpath=//div[@class='jp-play']   # Corrected XPath for play button
+    Click Element    xpath=//div[@class='jp-play']
+    Wait Until Page Contains    Live Stream
     Sleep    5 seconds
-    Click Element    xpath=//button[@id='PlayPause170508545__button MusicPlayer2802357603__playButton focus-within']
+    Click Element    xpath=//div[@class='jp-pause']   # Corrected XPath for pause button
     [Teardown]    Close Browser
