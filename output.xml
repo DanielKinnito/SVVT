@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-06-22T12:22:03.008311" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\Programming\SVVT\tests">
+<suite id="s1-s1" name="Test Shegerfm" source="D:\Programming\SVVT\tests\test_shegerfm.robot">
+<test id="s1-s1-t1" name="Test Live Radio Streaming" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-22T12:22:11.908043" level="INFO">Opening browser 'chrome' to base url 'http://shegerfm.com'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-22T12:22:11.903009" elapsed="94.014841"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-22T12:23:45.920985" level="INFO">Clicking element '//button[@id='play-live-stream']'.</msg>
+<msg time="2024-06-22T12:23:49.054085" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-22T12:23:49.054085" level="FAIL">Element with locator '//button[@id='play-live-stream']' not found.</msg>
+<arg>//button[@id='play-live-stream']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-22T12:23:45.920985" elapsed="3.177371">Element with locator '//button[@id='play-live-stream']' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-22T12:23:49.099594" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2024-06-22T12:23:49.100595" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-22T12:23:49.102590" elapsed="2.836495"/>
+</kw>
+<status status="FAIL" start="2024-06-22T12:22:11.903009" elapsed="100.040119">Element with locator '//button[@id='play-live-stream']' not found.</status>
+</test>
+<test id="s1-s1-t2" name="Test On-Demand Audio Playback" line="15">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-22T12:23:51.963277" level="INFO">Opening browser 'chrome' to base url 'http://shegerfm.com'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-22T12:23:51.963277" elapsed="34.984817"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-22T12:24:26.950836" level="INFO">Clicking element '//a[@id='on-demand']'.</msg>
+<msg time="2024-06-22T12:24:27.376080" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-22T12:24:27.376080" level="FAIL">Element with locator '//a[@id='on-demand']' not found.</msg>
+<arg>//a[@id='on-demand']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-22T12:24:26.949837" elapsed="0.428266">Element with locator '//a[@id='on-demand']' not found.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//div[@class='show'][1]//button[@id='play']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-22T12:24:27.378103" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-22T12:24:27.378103" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2024-06-22T12:24:27.378103" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-22T12:24:27.378103" elapsed="2.739920"/>
+</kw>
+<status status="FAIL" start="2024-06-22T12:23:51.948230" elapsed="38.169793">Element with locator '//a[@id='on-demand']' not found.</status>
+</test>
+<test id="s1-s1-t3" name="Test Program Schedules" line="23">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-22T12:24:30.118023" level="INFO">Opening browser 'chrome' to base url 'http://shegerfm.com'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-22T12:24:30.118023" elapsed="47.701529"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-22T12:25:17.827818" level="INFO">Clicking element '//a[@id='program-schedules']'.</msg>
+<msg time="2024-06-22T12:25:40.814640" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-22T12:25:40.815638" level="FAIL">Element with locator '//a[@id='program-schedules']' not found.</msg>
+<arg>//a[@id='program-schedules']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-22T12:25:17.827818" elapsed="22.988817">Element with locator '//a[@id='program-schedules']' not found.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//table[@id='schedule-table']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-06-22T12:25:40.817633" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2024-06-22T12:25:40.817633" elapsed="0.000997"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-22T12:25:40.818630" elapsed="4.239962"/>
+</kw>
+<status status="FAIL" start="2024-06-22T12:24:30.118023" elapsed="74.940569">Element with locator '//a[@id='program-schedules']' not found.</status>
+</test>
+<test id="s1-s1-t4" name="Test Artist Profiles" line="30">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-22T12:25:45.079251" level="INFO">Opening browser 'chrome' to base url 'http://shegerfm.com'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-22T12:25:45.078252" elapsed="44.393405"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-22T12:26:29.471657" level="INFO">Clicking element '//a[@id='artist-profiles']'.</msg>
+<msg time="2024-06-22T12:26:29.897884" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-22T12:26:29.897884" level="FAIL">Element with locator '//a[@id='artist-profiles']' not found.</msg>
+<arg>//a[@id='artist-profiles']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-22T12:26:29.471657" elapsed="0.426227">Element with locator '//a[@id='artist-profiles']' not found.</status>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//div[@class='artist'][1]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-06-22T12:26:29.897884" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2024-06-22T12:26:29.897884" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-22T12:26:29.897884" elapsed="2.750041"/>
+</kw>
+<status status="FAIL" start="2024-06-22T12:25:45.072761" elapsed="47.580180">Element with locator '//a[@id='artist-profiles']' not found.</status>
+</test>
+<test id="s1-s1-t5" name="Test Song Request Form" line="37">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-22T12:26:32.668876" level="INFO">Opening browser 'chrome' to base url 'http://shegerfm.com'.</msg>
+<arg>${URL}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-22T12:26:32.666880" elapsed="39.030870"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-22T12:27:11.706923" level="INFO">Clicking element '//a[@id='song-request']'.</msg>
+<msg time="2024-06-22T12:27:28.835562" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-22T12:27:28.836555" level="FAIL">Element with locator '//a[@id='song-request']' not found.</msg>
+<arg>//a[@id='song-request']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-22T12:27:11.697750" elapsed="17.139802">Element with locator '//a[@id='song-request']' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>//input[@id='song-request-text']</arg>
+<arg>My favorite song</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-22T12:27:28.837983" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>//button[@id='submit-request']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-22T12:27:28.839091" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//div[@id='confirmation']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-06-22T12:27:28.839688" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2024-06-22T12:27:28.840362" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-22T12:27:28.840938" elapsed="4.884153"/>
+</kw>
+<status status="FAIL" start="2024-06-22T12:26:32.661907" elapsed="61.066158">Element with locator '//a[@id='song-request']' not found.</status>
+</test>
+<status status="FAIL" start="2024-06-22T12:22:03.491690" elapsed="330.252336"/>
+</suite>
+<status status="FAIL" start="2024-06-22T12:22:03.019393" elapsed="330.732607"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="5" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="5" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="5" skip="0" id="s1-s1" name="Test Shegerfm">Tests.Test Shegerfm</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
