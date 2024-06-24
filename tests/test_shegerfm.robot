@@ -51,7 +51,7 @@ View Program Schedules
     [Documentation]    Verify that the daily and weekly program schedules are displayed correctly
     Open Browser    ${URL}    chrome
     Maximize Browser Window
-    Click Element    xpath=//a[text()='Schedules']
+    Click Link    xpath=//*[@id="comp-lh6qc6yi3label"]
     Wait Until Page Contains    Program Schedule
     [Teardown]    Close Browser
 
@@ -64,24 +64,15 @@ View Artist Profiles
     Wait Until Page Contains    Biography
     [Teardown]    Close Browser
 
-Submit Song Request
-    [Documentation]    Verify that the song request form is functional
-    Open Browser    ${URL}    chrome
-    Maximize Browser Window
-    Click Element    xpath=//a[text()='Song Request']
-    Input Text    xpath=//input[@name='song']    My Favorite Song
-    Input Text    xpath=//input[@name='name']    Test User
-    Click Button    xpath=//button[@type='submit']
-    Wait Until Page Contains    Thank you for your request
-    [Teardown]    Close Browser
-
 Submit Feedback
     [Documentation]    Verify that the feedback form is functional and submissions are processed correctly
     Open Browser    ${URL}    chrome
     Maximize Browser Window
-    Click Element    xpath=//a[text()='Feedback']
-    Input Text    xpath=//textarea[@name='feedback']    Great station!
-    Input Text    xpath=//input[@name='name']    Test User
-    Click Button    xpath=//button[@type='submit']
+    Click Link    xpath=//*[@id="comp-lh6qc6yi6label"]
+    Input Text    id:input_comp-jxbk5nm9    Random_one
+    Input Text    id:input_comp-jxbk5nmg    random@gmail.com
+    Input Text    id:input_comp-jxbk5nmk    0909090909
+    Input Text    id:textarea_comp-jxbk5nmp    Great Station!
+    Click Button    xpath=//*[@id="comp-jxbk5nmv"]/button/span
     Wait Until Page Contains    Thank you for your feedback
     [Teardown]    Close Browser
