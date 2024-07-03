@@ -5,33 +5,34 @@ Library    SeleniumLibrary
 ${URL}    https://www.shegerfm.com
 
 *** Test Cases ***
+
 Live Radio Streaming Accessible from Homepage
     [Documentation]    Verify that live radio streaming is accessible from the homepage
     Open Browser    ${URL}    chrome
     Maximize Browser Window
-    Wait Until Element Is Visible    xpath=//a[text()='Live Radio']
-    Click Element    xpath=//a[text()='Live Radio']
-    Wait Until Page Contains    Listen Live
+    Wait Until Element Is Visible    xpath=//a[contains(@class, 'comp-kr2peefk') and contains(text(), 'Listen Live')]
+    Click Element    xpath=//a[contains(@class, 'comp-kr2peefk') and contains(text(), 'Listen Live')]
+    Wait Until Element Is Visible    xpath=//button[@aria-label='Pause']
     [Teardown]    Close Browser
 
 Play and Pause Live Stream
     [Documentation]    Verify that the play and pause controls for live streaming work correctly
     Open Browser    ${URL}    chrome
     Maximize Browser Window
-    Click Element    xpath=//a[text()='Live Radio']
-    Wait Until Page Contains    Listen Live
-    Click Element    xpath=//button[@id='play-button']
+    Click Element    xpath=//a[contains(@class, 'comp-kr2peefk') and contains(text(), 'Listen Live')]
+    Wait Until Element Is Visible    xpath=//button[@aria-label='Play']
+    Click Element    xpath=//button[@aria-label='Play']
     Sleep    5 seconds
-    Click Element    xpath=//button[@id='pause-button']
+    Click Element    xpath=//button[@aria-label='Pause']
     [Teardown]    Close Browser
 
 On-Demand Audio Playback Accessible
     [Documentation]    Verify that users can access on-demand audio playback from the on-demand section
     Open Browser    ${URL}    chrome
     Maximize Browser Window
-    Click Element    xpath=//a[text()='On-Demand']
+    Click Element    xpath=//a[contains(@class, 'comp-kr2peefk') and contains(text(), 'On-Demand')]
     Wait Until Page Contains    On-Demand Shows
-    Click Element    xpath=//div[@class='show'][1]
+    Click Element    xpath=//div[contains(@class, 'show')][1]
     Wait Until Page Contains    Play
     [Teardown]    Close Browser
 
@@ -39,12 +40,12 @@ Play and Pause On-Demand Audio
     [Documentation]    Verify that the play and pause controls work for on-demand audio
     Open Browser    ${URL}    chrome
     Maximize Browser Window
-    Click Element    xpath=//a[text()='On-Demand']
-    Click Element    xpath=//div[@class='show'][1]
+    Click Element    xpath=//a[contains(@class, 'comp-kr2peefk') and contains(text(), 'On-Demand')]
+    Click Element    xpath=//div[contains(@class, 'show')][1]
     Wait Until Page Contains    Play
-    Click Element    xpath=//button[@id='play-button']
+    Click Element    xpath=//button[@aria-label='Play']
     Sleep    5 seconds
-    Click Element    xpath=//button[@id='pause-button']
+    Click Element    xpath=//button[@aria-label='Pause']
     [Teardown]    Close Browser
 
 View Program Schedules
@@ -59,8 +60,8 @@ View Artist Profiles
     [Documentation]    Verify that artist profiles are accessible and display the correct information
     Open Browser    ${URL}    chrome
     Maximize Browser Window
-    Click Element    xpath=//a[text()='Artists']
-    Click Element    xpath=//div[@class='artist-profile'][1]
+    Click Element    xpath=//a[contains(@class, 'comp-kr2peefk') and contains(text(), 'Artists')]
+    Click Element    xpath=//div[contains(@class, 'artist-profile')][1]
     Wait Until Page Contains    Biography
     [Teardown]    Close Browser
 
@@ -69,10 +70,10 @@ Submit Feedback
     Open Browser    ${URL}    chrome
     Maximize Browser Window
     Click Link    xpath=//*[@id="comp-lh6qc6yi6label"]
-    Input Text    id:input_comp-jxbk5nm9    Random_one
-    Input Text    id:input_comp-jxbk5nmg    random@gmail.com
-    Input Text    id:input_comp-jxbk5nmk    0909090909
-    Input Text    id:textarea_comp-jxbk5nmp    Great Station!
+    Input Text    id=input_comp-jxbk5nm9    Random_one
+    Input Text    id=input_comp-jxbk5nmg    random@gmail.com
+    Input Text    id=input_comp-jxbk5nmk    0909090909
+    Input Text    id=textarea_comp-jxbk5nmp    Great Station!
     Click Button    xpath=//*[@id="comp-jxbk5nmv"]/button/span
     Wait Until Page Contains    Thank you for your feedback
     [Teardown]    Close Browser
