@@ -11,6 +11,7 @@ This repository contains automated tests using Robot Framework to verify and val
 - [Viewing Test Results](#viewing-test-results)
 - [Test Cases](#test-cases)
 - [Contributing](#contributing)
+- [Disclaimer](#disclaimer)
 
 ## Overview
 
@@ -128,3 +129,6 @@ git commit -am 'Add new feature'
 git push origin feature/new-feature
 ```
 5. Create a new Pull Request.
+
+## Disclaimer
+Screenshots and codes in this repo may not be correct. You will have to correct the xpath in the codes to get the results you want.
